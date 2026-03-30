@@ -373,6 +373,32 @@ npm run tauri dev
 npm run tauri build
 ```
 
+### Docker Compose 运行
+
+如果你只是想在浏览器里预览前端界面，可以使用 Docker Compose。这个镜像只包含前端静态页面，用来做演示或快速查看界面；它不包含 Tauri 桌面能力，所以很多本地功能仍然需要原生桌面版。
+
+```bash
+docker compose up -d --build
+```
+
+打开：
+
+```bash
+http://localhost:8080
+```
+
+停止：
+
+```bash
+docker compose down
+```
+
+如果想直接拉取仓库发布的镜像：
+
+```bash
+docker pull ghcr.io/jlcodes99/cockpit-tools:latest
+```
+
 ---
 
 ## Star History

@@ -377,6 +377,32 @@ npm run tauri dev
 npm run tauri build
 ```
 
+### Docker Compose
+
+If you only want to preview the frontend in a browser, you can use Docker Compose. This image contains static frontend assets only, so it is good for demos or quick UI checks. It does not include Tauri desktop capabilities, so many local features still require the native app.
+
+```bash
+docker compose up -d --build
+```
+
+Open:
+
+```bash
+http://localhost:8080
+```
+
+Stop:
+
+```bash
+docker compose down
+```
+
+To pull the published image directly:
+
+```bash
+docker pull ghcr.io/jlcodes99/cockpit-tools:latest
+```
+
 ---
 
 ## Star History
